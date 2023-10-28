@@ -1,0 +1,344 @@
+/*CSS für Homepageohnesamples*/
+*{
+	box-sizing:border-box;
+	font-family: 'Lato', sans-serif;
+	
+}
+body{
+	background-color:#003921;
+	margin:0;	
+}
+.wrapper{
+	width: 90%;
+	margin: 0 auto;
+	min-height:90vh;
+}
+header{
+	
+	background-color: #277755;
+	min-height:7rem;
+	text-align:center;
+	margin:0 auto;
+	border-bottom:1px solid #629A33;
+}
+header h1{
+	
+	padding: 30px 0px 5px 10px;
+	color: #B9E594;
+	margin: 0 auto;
+}
+header h6{
+	margin: 0 auto;
+	text-align: center;
+	font-size:1em;
+	color:#003921;
+}
+main{
+	display: flex;
+	background-color:#277755;
+}
+nav ul{
+	list-style-type:none;
+	margin:0;
+	padding:0px 3px 0px 5px;
+}
+nav.side{
+	min-width:125px;
+	min-height:90vh;
+	max-height:95vh;
+	color: #003921;
+	background-color: #277755;
+	display:flex;
+	flex-direction:column;
+	justify-content:space-between;
+	padding:1.5em 0 1.3em 0;
+}
+nav.side a{
+	color:/*#003921 #74B498*/ #B9E594;
+	text-decoration:none;
+	display:block;
+}
+nav.side a:hover{
+	background-color:#489473;
+	color:#003921;
+}
+nav.side h3{
+	padding:0;
+	margin:0;
+}
+nav.side ul{
+	padding: 0;
+	margin: 0;
+}
+nav.side li{
+	margin-top:0.5rem;
+	
+}
+section.grid{
+	display: grid;
+	gap: 1.5rem;
+	grid-template-columns: repeat(2,1fr);
+	padding: 1rem;
+	width:80%;
+	background-color:#fff;
+}
+
+.artikel {
+	display:flex;
+	justify-content:space-between;
+	flex-direction:column;
+	min-height:85%;
+	max-height:100%;
+}
+.zusatz {
+	display:flex;
+	justify-content:space-around;
+	flex-direction:column;
+	min-height:85%;
+	max-height:100%;
+}
+.artikel h1, h2{
+	display:inline;
+	font-size: 1.3em;
+	color:#003921;
+	margin: 10px 0;
+	font-weight: bold;
+}
+.artikel p{
+	margin: 0.5rem;
+}
+p.add{
+	font-size:0.8rem;
+	margin-top:0.1rem;
+	margin-left:0.5rem;
+	font-style: italic;
+}
+.arbeitszeugnisse, .profil, .skills, .softskills{
+	display:flex;
+	flex-direction:column;
+	justify-content: space-around;
+}
+.impressum {
+	display:flex;
+	flex-direction:column;
+	justify-content: space-around;
+}
+.contact{
+	display:flex;
+	flex-direction:column;
+	justify-content: center;
+}
+article{
+	display:flex;
+	flex-direction:column;
+	min-height:85%;
+	max-height:100%;
+}
+figure{
+	max-height:350px;
+}
+figure img{
+	border-radius: 25% 10% 55% 5%;
+}
+figure img:hover{
+	transform: scale(1.5) translate(15px, 37px);
+}
+.zusatz aside{
+	align-self:baseline;
+	background-color:#8AC15D;
+	color:#3F7413;
+	border-radius: 20px 10px;
+	padding:0.4rem;
+	margin:0.5rem 0 0 1rem;
+	min-width: 15rem;
+	max-width: 20rem;
+}
+.artikel aside{
+	align-self:baseline;
+	background-color:#B9E594;
+	color:#3F7413;
+	border-radius: 20px 10px;
+	padding:0.4rem;
+	margin:0.5rem 0 0 1rem;
+	min-width: 15rem;
+	max-width: 20rem;
+}
+table.cv{
+	border-collapse:collapse;
+	margin-bottom:1rem;
+}
+.cv td{
+	padding:5px;
+	margin:0;
+}
+.cvadd{
+	font-size:0.8rem;
+	margin-top: 0;
+}
+.link_lebenslauf{
+	display:inline;
+	background-color:#277755;
+	color: #B9E594;
+	border-radius:10px 20px;
+	margin-left:10px;
+	padding: 0.1rem 1rem;
+	text-decoration:none;
+}
+contact h1, h2{
+	font-size: 1.3em;
+	color:#003921;
+	margin: 10px 0;
+}
+#slider {
+   margin: 0 auto;   
+   max-width: 80%;
+   text-align: center;
+}
+#slider input[type=radio] {
+   display: none;
+}
+#slider label {
+   cursor:pointer;
+   text-decoration: none;
+}
+#slides {
+   padding: 10px;
+   border: 3px solid #ccc;
+   border-radius:10px 20px;
+   position: relative;
+   z-index: 1;
+}
+#overflow {
+   width: 100%;
+   overflow: hidden;
+}
+#slide1:checked ~ #slides .inner {
+   margin-left: 0;
+}
+#slide2:checked ~ #slides .inner {
+   margin-left: -100%;
+}
+#slide3:checked ~ #slides .inner {
+   margin-left: -200%;
+}
+#slides .inner {
+   transition: margin-left 800ms cubic-bezier(0.770, 0.000, 0.175, 0.500);
+   width: 400%;
+   /*line-height: 0;*/
+   height: 12rem;
+   z-index:5;
+}
+#slides .slide {
+   width: 25%;
+   float:left;
+   display: flex;
+   justify-content: space-between;
+  /* align-items: center;*/
+   height: 100%;
+   color: #000;
+}
+
+#controls {
+   margin: -180px 0 0 0;
+   width: 100%;
+   height: 50px;
+   z-index: 30;
+   position: relative;
+}
+#controls label {
+   transition: opacity 0.2s ease-out;
+   background-color:#8AC15D;
+   display: none;
+   width: 50px;
+   height: 50px;
+   opacity: 0.5;
+   text-align: center;
+   font-size:2.3rem;
+   
+}
+#controls label:hover {
+   opacity: 1;
+}
+#slide1:checked ~ #controls label:nth-child(2),
+#slide2:checked ~ #controls label:nth-child(3),
+#slide3:checked ~ #controls label:nth-child(1)
+{
+   background: #8AC15D; /*url(../siteimages/arrow-right.png) no-repeat;*/
+   float:right;
+   margin: 0 -50px 0 0;
+   display: block;
+   border-radius:0 100% 100% 0;
+}
+#slide1:checked ~ #controls label:nth-last-child(1),
+#slide2:checked ~ #controls label:nth-last-child(3),
+#slide3:checked ~ #controls label:nth-last-child(2)
+{
+   background: #8AC15D;/*url(../siteimages/arrow-left.png) no-repeat;*/
+   float:left;
+   margin: 0 0 0 -50px;
+   display: block;
+   border-radius:50% 0 0 50%;
+}
+#bullets {
+   margin: 150px 0 0;
+   text-align: center;
+}
+#bullets label {
+   display: inline-block;
+   width: 10px;
+   height: 10px;
+   border-radius:100%;
+   background: #ccc;
+   margin: 0 10px;
+}
+#slide1:checked ~ #bullets label:nth-child(1),
+#slide2:checked ~ #bullets label:nth-child(2),
+#slide3:checked ~ #bullets label:nth-child(3),
+#slide4:checked ~ #bullets label:nth-child(4) {
+   background: #003921;
+}
+@media screen and (max-width: 900px) {
+   #slide1:checked ~ #controls label:nth-child(2),
+   #slide2:checked ~ #controls label:nth-child(3),
+   #slide3:checked ~ #controls label:nth-child(4),
+   #slide4:checked ~ #controls label:nth-child(1),
+   #slide1:checked ~ #controls label:nth-last-child(2),
+   #slide2:checked ~ #controls label:nth-last-child(3),
+   #slide3:checked ~ #controls label:nth-last-child(4),
+   #slide4:checked ~ #controls label:nth-last-child(1) {
+      margin: 0;
+   }
+   #slides {
+      max-width: calc(100% - 140px);
+      margin: 0 auto;
+   }
+}
+.zusatz form{
+	width:90%;
+	margin: 10px 0;
+}
+.zusatz fieldset{
+	border:none;
+	/*-webkit-border-radius: 20px 10px;
+	border-radius: 20px 10px;
+	width:75%;*/
+}
+.zusatz fieldset select{
+	width:200px;
+}
+aside h4.zeugnis{
+	margin-bottom:0;
+}
+input{
+	background-color:#3F7413;
+	color:#8AC15D;
+	border-radius:10px 20px;
+	margin-left:10px;
+}
+input:hover{
+	background-color:#489473;
+	color:#003921;
+}
+section a{
+	color:#003921;
+}
